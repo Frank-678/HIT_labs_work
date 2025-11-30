@@ -4,7 +4,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 def main():
-    # Initialize global variables
+    # Initialize variables
     counts = {'pos': 0, 'neu': 0, 'neg': 0}
     
     # Create analyzer object
@@ -24,11 +24,7 @@ def main():
 
 
 # Classify
-def classify_sentiment(score: float, counts: dict): # 注：不需要明确说明 counts 是一个字典，也使用类型提示 (Type Hints)如此处
-    # （原代码，现已经删除全局变量）
-    # State global variables
-    # global pos, neu, neg  # 注解易错：Python中修改全局变量必须global声明，而读取不需要。
-    
+def classify_sentiment(score: float, counts: dict): # 注：不需要明确说明数据类型，但也可以像这样使用类型提示 (Type Hints)
     # Justify sentiment intensity
     if score < -0.05:
         counts[neg] += 1
