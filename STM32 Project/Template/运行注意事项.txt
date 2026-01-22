@@ -1,0 +1,1 @@
+每次修改代码或添加文件于project，都需要Build(F7),Translate(Ctrl+F7),Load(F8).
