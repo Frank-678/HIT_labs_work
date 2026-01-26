@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware
+-I.\RTE\_Target_1
+-I"D:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"
+-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"
+-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
+-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d "Hardware\Key.c"
